@@ -1,0 +1,15 @@
+D:\-+- Studying\csharp-todoapp\bin\Debug\csharp-todoapp.exe.config
+D:\-+- Studying\csharp-todoapp\bin\Debug\csharp-todoapp.exe
+D:\-+- Studying\csharp-todoapp\bin\Debug\csharp-todoapp.pdb
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.AssemblyReference.cache
+D:\-+- Studying\csharp-todoapp\obj\Debug\MainWindow.g.cs
+D:\-+- Studying\csharp-todoapp\obj\Debug\App.g.cs
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp_MarkupCompile.cache
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp_MarkupCompile.lref
+D:\-+- Studying\csharp-todoapp\obj\Debug\MainWindow.baml
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.g.resources
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp_todoapp.Properties.Resources.resources
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.GenerateResource.cache
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.CoreCompileInputs.cache
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.exe
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.pdb
