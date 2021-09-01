@@ -33,7 +33,18 @@ namespace csharp_todoapp
                 new TodoModel(){Text="test 1" },
                 new TodoModel(){Text="test 2", IsDone=true}
             };
+
             dgTodoList.ItemsSource = _todoDataList;
+            _todoDataList.ListChanged += _todoDataList_ListChanged;
+
+        }
+
+        private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
+        {
+            switch (e.ListChangedType)
+            {
+                  default;
+            }
         }
     }
 }
