@@ -41,10 +41,7 @@ namespace csharp_todoapp
 
         private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
         {
-            switch (e.ListChangedType)
-            {
-                  default;
-            }
+            if (e.ListChangedType == )
         }
     }
 }

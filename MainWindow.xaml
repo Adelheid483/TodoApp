@@ -12,15 +12,15 @@
                 <DataGridTextColumn Header="Creation Date" 
                                     Width="200" 
                                     IsReadOnly="True"
-                                    Binding="{Binding Path = CreationDate}"/>
+                                    Binding="{Binding Path=CreationDate}"/>
                 <DataGridCheckBoxColumn Header="Done" 
                                         Width="100" 
                                         IsReadOnly="False"
-                                        Binding="{Binding Path = IsDone}"/>
+                                        Binding="{Binding Path=IsDone, UpdateSourceTrigger=PropertyChanged}"/>
                 <DataGridTextColumn Header="Todo tasks"
                                     Width="*" 
                                     IsReadOnly="False"
-                                    Binding="{Binding Path = Text}"/>
+                                    Binding="{Binding Path=Text}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
