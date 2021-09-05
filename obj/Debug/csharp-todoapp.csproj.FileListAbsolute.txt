@@ -13,3 +13,6 @@ D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.GenerateResource.
 D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.CoreCompileInputs.cache
 D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.exe
 D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.pdb
+D:\-+- Studying\csharp-todoapp\bin\Debug\Newtonsoft.Json.dll
+D:\-+- Studying\csharp-todoapp\bin\Debug\Newtonsoft.Json.xml
+D:\-+- Studying\csharp-todoapp\obj\Debug\csharp-todoapp.csproj.CopyComplete

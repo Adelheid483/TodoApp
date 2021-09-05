@@ -1,4 +1,5 @@
 ﻿using csharp_todoapp.Models;
+using csharp_todoapp.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,8 @@ namespace csharp_todoapp
     public partial class MainWindow : Window
     {
         private BindingList<TodoModel> _todoDataList;
+        private FileIOService _fileIOService;
+        private readonly string PATH = $"{Environment.CurrentDirectory}\\todoDataList.json";
 
         public MainWindow()
         {
@@ -28,15 +31,19 @@ namespace csharp_todoapp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _todoDataList = new BindingList<TodoModel>()
+            _fileIOService = new FileIOService(PATH);
+            try
             {
-                new TodoModel(){Text="test 1" },
-                new TodoModel(){Text="test 2", IsDone=true}
-            };
+                _todoDataList = _fileIOService.LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Close();
+            }
 
             dgTodoList.ItemsSource = _todoDataList;
             _todoDataList.ListChanged += _todoDataList_ListChanged;
-
         }
 
         private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
@@ -45,7 +52,15 @@ namespace csharp_todoapp
                 || e.ListChangedType == ListChangedType.ItemDeleted
                 || e.ListChangedType == ListChangedType.ItemChanged)
             {
-
+                try
+                {
+                    _fileIOService.SaveData(sender);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    Close();
+                }
             }
         }
     }

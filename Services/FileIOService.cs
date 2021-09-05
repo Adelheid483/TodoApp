@@ -41,8 +41,8 @@ namespace csharp_todoapp.Services
 
         }
 
-        // метод сохраняющий данные с диска
-        public void SaveData(BindingList<TodoModel> todoDataList)
+        // метод сохраняющий данные на диск
+        public void SaveData(object todoDataList)
         {
             // using нужен для вызова метода dispose у объекта writer
             // метода dispose нужен для освобождения ресурсов, который исп-ся для записи данных в файл
@@ -53,6 +53,6 @@ namespace csharp_todoapp.Services
                 // строку записываем в файл
                 writer.Write(output);
             }
-        }
+        }       
     }
 }
