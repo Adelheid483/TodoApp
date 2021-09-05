@@ -41,7 +41,12 @@ namespace csharp_todoapp
 
         private void _todoDataList_ListChanged(object sender, ListChangedEventArgs e)
         {
-            if (e.ListChangedType == )
+            if (e.ListChangedType == ListChangedType.ItemAdded 
+                || e.ListChangedType == ListChangedType.ItemDeleted
+                || e.ListChangedType == ListChangedType.ItemChanged)
+            {
+
+            }
         }
     }
 }
